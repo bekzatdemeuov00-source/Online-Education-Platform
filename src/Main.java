@@ -14,7 +14,7 @@ public class Main {
 
         System.out.println("===== ONLINE EDUCATION PLATFORM =====");
 
-        // FACADE + BUILDER + FACTORY
+       
         PlatformFacade platform = new PlatformFacade();
 
         Map<String, String> assignments = new LinkedHashMap<>();
@@ -35,7 +35,7 @@ public class Main {
         System.out.println("\n BUILDER ");
         System.out.println(course);
 
-        // DECORATOR
+       
         System.out.println("\n DECORATOR ");
 
         CourseOffer offer = platform.buyCourse(course, true, true);
@@ -43,18 +43,18 @@ public class Main {
         System.out.println(offer.getDescription());
         System.out.println("Price: " + offer.getPrice());
 
-        // OBSERVER
+        
         System.out.println("\n OBSERVER ");
 
         platform.enroll(course, "John");
         platform.gradeAssignment(course, "Java Quiz");
 
-        // FACTORY
+        
         System.out.println("\n FACTORY ");
 
         platform.startCourse(course);
 
-        // STRATEGY
+        
         System.out.println("\n STRATEGY ");
 
         System.out.println("Recommended courses:");
